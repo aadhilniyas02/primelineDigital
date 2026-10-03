@@ -58,7 +58,7 @@ export default function Services() {
                         transition={{ duration: 0.5, ease }}
                         className="relative overflow-hidden"
                       >
-                        <div className="grid gap-6 pb-8 pl-16 sm:pl-32 md:grid-cols-2">
+                        <div className="grid gap-6 pb-8 pl-[3.75rem] sm:pl-32 md:grid-cols-2">
                           <p className="max-w-md text-mute-2">{s.desc}</p>
                           <ul className="flex flex-wrap content-start gap-2">
                             {s.tags.map((t) => (

@@ -70,13 +70,13 @@ export default function Contact() {
             <LineReveal lines={["Let's build", <span key="s" className="text-brand">something great.</span>]} />
           </h2>
           <ul className="mt-12 space-y-5 text-mute-2">
-            <li><a className="flex items-center gap-4 hover:text-brand" href={`mailto:${company.email}`}><Mail className="h-5 w-5 text-brand" aria-hidden />{company.email}</a></li>
-            <li><a className="flex items-center gap-4 hover:text-brand" href={`tel:${company.phone.replace(/\s/g, '')}`}><Phone className="h-5 w-5 text-brand" aria-hidden />{company.phone}</a></li>
+            <li><a className="tap flex items-center gap-4 hover:text-brand" href={`mailto:${company.email}`}><Mail className="h-5 w-5 text-brand" aria-hidden />{company.email}</a></li>
+            <li><a className="tap flex items-center gap-4 hover:text-brand" href={`tel:${company.phone.replace(/\s/g, '')}`}><Phone className="h-5 w-5 text-brand" aria-hidden />{company.phone}</a></li>
             <li className="flex items-center gap-4"><MapPin className="h-5 w-5 text-brand" aria-hidden />{company.location}</li>
           </ul>
           <div className="mt-10 flex flex-wrap gap-3">
             {company.socials.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="border border-white/20 px-4 py-2 font-display text-[0.7rem] uppercase tracking-[0.16em] transition-colors hover:border-brand hover:text-brand">{s.label}</a>
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="tap border border-white/20 px-4 py-2 font-display text-[0.7rem] uppercase tracking-[0.16em] transition-colors hover:border-brand hover:text-brand">{s.label}</a>
             ))}
           </div>
         </div>

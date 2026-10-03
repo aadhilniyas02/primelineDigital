@@ -112,7 +112,7 @@ export function Button({ children, href, onClick, variant = 'primary', type = 'b
   }
 
   const base =
-    'group relative inline-flex items-center justify-center gap-3 px-7 py-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.14em] transition-colors duration-300 border disabled:opacity-50 disabled:pointer-events-none'
+    'group relative inline-flex items-center justify-center gap-3 px-6 py-4 font-display text-[0.78rem] sm:px-7 sm:text-[0.8rem] font-bold uppercase tracking-[0.14em] transition-colors duration-300 border disabled:opacity-50 disabled:pointer-events-none'
   const styles =
     variant === 'primary'
       ? 'bg-brand text-black border-brand hover:bg-black hover:text-brand'

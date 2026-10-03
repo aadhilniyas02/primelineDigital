@@ -45,9 +45,9 @@ export default function Navbar() {
           scrolled ? 'border-white/10 bg-black/70 backdrop-blur-xl' : 'border-transparent bg-transparent'
         }`}
       >
-        <div className="container-x flex h-[72px] items-center justify-between">
+        <div className="container-x flex h-[68px] items-center justify-between sm:h-[72px]">
           <a href="#home" aria-label="PrimeLine Digital — home" className="flex items-center">
-            <Logo className="h-11 sm:h-12" />
+            <Logo className="h-9 min-[380px]:h-11 sm:h-12" />
           </a>
 
           <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
@@ -74,7 +74,7 @@ export default function Navbar() {
               <Button href="#contact" className="!px-5 !py-3">Let&apos;s Talk</Button>
             </div>
             <button
-              className="grid h-11 w-11 place-items-center border border-white/20 text-white lg:hidden"
+              className="grid h-12 w-12 place-items-center border border-white/20 text-white lg:hidden"
               aria-label={open ? 'Close menu' : 'Open menu'}
               aria-expanded={open}
               aria-controls="mobile-menu"
@@ -94,19 +94,19 @@ export default function Navbar() {
             role="dialog"
             aria-modal="true"
             aria-label="Menu"
-            className="fixed inset-0 z-40 flex flex-col bg-black px-6 pb-8 pt-24 lg:hidden"
+            className="fixed inset-0 z-40 flex flex-col overflow-y-auto overscroll-contain bg-black px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-24 lg:hidden"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ duration: 0.5, ease }}
           >
-            <nav aria-label="Mobile" className="flex flex-1 flex-col justify-center gap-1">
+            <nav aria-label="Mobile" className="flex flex-1 flex-col justify-center">
               {navLinks.map((l, i) => (
                 <motion.a
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="display flex items-baseline gap-4 border-b border-white/10 py-3 text-4xl sm:text-5xl"
+                  className="display flex items-baseline gap-4 border-b border-white/10 py-2.5 text-[clamp(1.75rem,8vw,3rem)] [@media(max-height:560px)]:py-1.5 [@media(max-height:560px)]:text-2xl"
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.15 + i * 0.05, duration: 0.5, ease }}
@@ -120,10 +120,10 @@ export default function Navbar() {
               <Button href="#contact" className="w-full" >Start a Project</Button>
               <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/60">
                 {company.socials.map((s) => (
-                  <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="hover:text-brand">{s.label}</a>
+                  <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="tap hover:text-brand">{s.label}</a>
                 ))}
               </div>
-              <a href={`mailto:${company.email}`} className="block text-sm text-white/60 hover:text-brand">{company.email}</a>
+              <a href={`mailto:${company.email}`} className="tap text-sm text-white/60 hover:text-brand">{company.email}</a>
             </div>
           </motion.div>
         )}

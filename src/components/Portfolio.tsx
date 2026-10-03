@@ -25,7 +25,7 @@ export default function Portfolio() {
                 role="tab"
                 aria-selected={filter === c}
                 onClick={() => setFilter(c)}
-                className={`border px-4 py-2 font-display text-[0.7rem] font-semibold uppercase tracking-[0.16em] transition-colors ${
+                className={`tap border px-4 py-2 font-display text-[0.7rem] font-semibold uppercase tracking-[0.16em] transition-colors ${
                   filter === c ? 'border-brand bg-brand text-black' : 'border-white/20 text-white/70 hover:border-brand hover:text-brand'
                 }`}
               >
@@ -49,14 +49,14 @@ export default function Portfolio() {
                 className={i === 0 && list.length % 2 === 1 ? 'md:col-span-2' : ''}
               >
                 <article className="group relative block overflow-hidden border border-white/10 bg-black" data-cursor="View">
-                  <div className={`overflow-hidden ${i === 0 && list.length % 2 === 1 ? 'aspect-[16/8]' : 'aspect-[4/3]'}`}>
+                  <div className={`overflow-hidden ${i === 0 && list.length % 2 === 1 ? 'aspect-[4/5] sm:aspect-[4/3] md:aspect-[16/8]' : 'aspect-[4/5] sm:aspect-[4/3]'}`}>
                     <div className="h-full w-full transition-transform duration-[900ms] ease-out group-hover:scale-110">
                       <ProjectArt variant={p.variant} />
                     </div>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
                   <span className="absolute left-0 top-0 h-[3px] w-0 bg-brand transition-all duration-700 group-hover:w-full" aria-hidden />
-                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 sm:p-8">
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-4 sm:p-8">
                     <div className="transition-transform duration-500 group-hover:-translate-y-1">
                       <div className="label">{p.category} · {p.industry}</div>
                       <h3 className="display mt-2 text-2xl sm:text-4xl">{p.client}</h3>

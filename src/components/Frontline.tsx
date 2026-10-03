@@ -46,7 +46,7 @@ export default function Frontline() {
 
       <div className="container-x relative">
         <div className="label">Our edge</div>
-        <h2 className="display mt-6 text-[clamp(2.6rem,8.5vw,8rem)]">
+        <h2 className="display mt-6 text-[clamp(2.2rem,10vw,8rem)]">
           Built for the <span className="text-brand">digital</span> frontline.
         </h2>
         <p className="mt-8 max-w-lg text-mute-2">Speed, precision and relentless iteration. We ship fast, measure honestly and keep pushing until the numbers move.</p>

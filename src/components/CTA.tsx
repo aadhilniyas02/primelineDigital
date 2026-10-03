@@ -15,7 +15,7 @@ export default function CTA() {
       <div aria-hidden className="grid-bg absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
 
       <div className="container-x text-center">
-        <h2 className="display text-[clamp(2.6rem,9vw,8.5rem)]">
+        <h2 className="display text-[clamp(2.1rem,10vw,8.5rem)]">
           <LineReveal lines={['Ready to move', <span key="y" className="text-brand">your business</span>, 'forward?']} />
         </h2>
         <p className="mx-auto mt-8 max-w-md text-lg text-mute-2">Let&apos;s build something that makes an impact.</p>

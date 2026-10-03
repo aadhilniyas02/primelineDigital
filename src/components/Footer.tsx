@@ -13,32 +13,32 @@ export default function Footer() {
         </div>
         <nav aria-label="Footer" className="md:col-span-2">
           <h3 className="label mb-5">Navigate</h3>
-          <ul className="space-y-3 text-sm text-mute-2">
-            {navLinks.map((l) => <li key={l.href}><a className="transition-colors hover:text-brand" href={l.href}>{l.label}</a></li>)}
+          <ul className="space-y-1 text-sm text-mute-2">
+            {navLinks.map((l) => <li key={l.href}><a className="tap transition-colors hover:text-brand" href={l.href}>{l.label}</a></li>)}
           </ul>
         </nav>
         <div className="md:col-span-2">
           <h3 className="label mb-5">Services</h3>
-          <ul className="space-y-3 text-sm text-mute-2">
-            {footerServices.map((s) => <li key={s}><a className="transition-colors hover:text-brand" href="#services">{s}</a></li>)}
+          <ul className="space-y-1 text-sm text-mute-2">
+            {footerServices.map((s) => <li key={s}><a className="tap transition-colors hover:text-brand" href="#services">{s}</a></li>)}
           </ul>
         </div>
         <div className="md:col-span-3">
           <h3 className="label mb-5">Contact</h3>
-          <ul className="space-y-3 text-sm text-mute-2">
-            <li><a className="hover:text-brand" href={`mailto:${company.email}`}>{company.email}</a></li>
-            <li><a className="hover:text-brand" href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></li>
+          <ul className="space-y-1 text-sm text-mute-2">
+            <li><a className="tap hover:text-brand" href={`mailto:${company.email}`}>{company.email}</a></li>
+            <li><a className="tap hover:text-brand" href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></li>
           </ul>
           <ul className="mt-6 flex flex-wrap gap-2">
             {company.socials.map((s) => (
-              <li key={s.label}><a href={s.href} target="_blank" rel="noreferrer" className="border border-white/15 px-3 py-1.5 text-xs text-white/70 transition-colors hover:border-brand hover:text-brand">{s.label}</a></li>
+              <li key={s.label}><a href={s.href} target="_blank" rel="noreferrer" className="tap border border-white/15 px-3 py-1.5 text-xs text-white/70 transition-colors hover:border-brand hover:text-brand">{s.label}</a></li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="container-x mt-16 flex flex-col justify-between gap-3 border-t border-white/10 py-6 text-xs text-mute sm:flex-row">
+      <div className="container-x mt-16 flex flex-col justify-between gap-3 border-t border-white/10 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-6 text-xs text-mute sm:flex-row">
         <p>© 2026 PrimeLine Digital. All rights reserved.</p>
-        <a href="#home" className="hover:text-brand">Back to top ↑</a>
+        <a href="#home" className="tap hover:text-brand">Back to top ↑</a>
       </div>
     </footer>
   )

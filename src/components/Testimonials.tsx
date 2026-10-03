@@ -25,7 +25,7 @@ export default function Testimonials() {
         </h2>
 
         <div className="mt-16 grid gap-10 lg:grid-cols-12" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-          <div className="relative min-h-[280px] border border-white/10 bg-black p-8 sm:p-14 lg:col-span-9">
+          <div className="relative min-h-[300px] border border-white/10 bg-black p-6 sm:p-14 lg:col-span-9">
             <Quote className="h-10 w-10 text-brand" aria-hidden />
             <AnimatePresence mode="wait">
               <motion.figure
@@ -36,7 +36,7 @@ export default function Testimonials() {
                 transition={{ duration: 0.5, ease }}
                 aria-live="polite"
               >
-                <blockquote className="mt-6 font-display text-xl leading-snug sm:text-3xl">{t.quote}</blockquote>
+                <blockquote className="mt-6 font-display text-lg leading-snug min-[400px]:text-xl sm:text-3xl">{t.quote}</blockquote>
                 <figcaption className="mt-8 flex items-center gap-4">
                   <span className="grid h-12 w-12 place-items-center bg-brand font-display font-bold text-black">{t.name[0]}</span>
                   <span>
