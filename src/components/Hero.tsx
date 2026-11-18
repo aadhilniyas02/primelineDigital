@@ -2,7 +2,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion
 import { useRef } from 'react'
 import { Zap } from 'lucide-react'
 import HeroCanvas from './HeroCanvas'
-import { Button, LineReveal, Logo, ease } from './ui'
+import { Button, LineReveal, ease } from './ui'
 
 export default function Hero() {
   const reduce = useReducedMotion()
@@ -26,21 +26,13 @@ export default function Hero() {
       </motion.div>
 
       <motion.div className="container-x" style={{ y, opacity: fade }}>
-        <motion.div
-          className="mb-8 flex items-center gap-4"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease }}
-        >
-          <Logo className="h-12 sm:h-16" />
-        </motion.div>
-
         <div className="label mb-6 flex items-start gap-2 !tracking-[0.16em] sm:items-center sm:!tracking-[0.22em]">
-          <Zap className="h-3.5 w-3.5" aria-hidden /> Digital marketing · Technology · Creative
+          <Zap className="h-3.5 w-3.5" aria-hidden /> Marketing · Technology · Creative · VISUAL PRODUCTION  
+              
         </div>
 
         <h1 className="display text-[clamp(2.1rem,10.5vw,9rem)] sm:text-[clamp(2.6rem,9.2vw,9rem)]">
-          <LineReveal inView={false} delay={0.45} lines={['We create', <span key="a">digital <span className="text-brand">experiences</span></span>, 'that move business.']} />
+          <LineReveal inView={false} delay={0.45} lines={['We build', <span key="a">digital <span className="text-brand">growth</span></span>, 'that move business.']} />
         </h1>
 
         <motion.p
@@ -49,7 +41,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0, ease }}
         >
-          Strategy, design, technology and digital growth — engineered to help ambitious brands move forward.
+          An <strong className="font-bold text-white">ROI-focused</strong> Digital Agency combining strategy, creative and technology, engineered to turn your budget into real growth
         </motion.p>
 
         <motion.div
@@ -58,7 +50,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.15, ease }}
         >
-          <Button href="#contact" className="max-[420px]:w-full">Start a Project</Button>
+          <Button href="#contact" className="max-[420px]:w-full">GET A FREE CONSULTATION</Button>
           <Button href="#work" variant="secondary" arrow="up" className="max-[420px]:w-full">Explore Our Work</Button>
         </motion.div>
       </motion.div>

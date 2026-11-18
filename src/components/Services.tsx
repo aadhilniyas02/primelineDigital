@@ -16,7 +16,7 @@ export default function Services() {
             <LineReveal lines={['What', <span key="w" className="text-brand">we do</span>]} />
           </h2>
           <Reveal className="max-w-md">
-            <p className="text-mute-2">Eight disciplines, one accountable team. Pick a single service or plug in the full growth engine.</p>
+            <p className="text-mute-2">Seven disciplines, one accountable team. Pick a single service or plug in the full growth engine.</p>
           </Reveal>
         </div>
 

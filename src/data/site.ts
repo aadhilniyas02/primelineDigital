@@ -23,25 +23,65 @@ export const navLinks = [
 ]
 
 export const marqueeItems = [
-  'Digital Strategy', 'Web Development', 'SEO', 'Google Ads', 'Social Media', 'Branding', 'AI Solutions',
+  'Digital Strategy',
+  'Web Development',
+  'Ecommerce',
+  'SEO',
+  'Performance Marketing',
+  'Social Media Marketing',
+  'Video Production',
+  'Content Creation',
+  'Branding',
+  'Graphic Design',
+  'UI/UX Design',
+  'Video Editing',
+  'Motion Design'
 ]
 
 export const stats = [
-  { value: 50, suffix: '+', label: 'Projects delivered' },
-  { value: 20, suffix: '+', label: 'Brands powered' },
-  { value: 5, suffix: '+', label: 'Years of experience' },
-  { value: 12, suffix: '', label: 'Industries served' },
+  { value: 20, suffix: '+', label: 'Projects delivered' },
+  { value: 10, suffix: '+', label: 'Businesses powered' },
+  { value: 2, suffix: '+', label: 'Years of experience' },
+  { value: 10, suffix: '', label: 'Industries served' },
 ]
 
 export const services = [
-  { title: 'Digital Strategy', desc: 'Market, audience and channel strategy that turns ambition into a measurable growth roadmap.', tags: ['Research', 'Positioning', 'Roadmaps'] },
-  { title: 'Website Design & Development', desc: 'Fast, custom-built websites engineered to look exceptional and convert relentlessly.', tags: ['UI/UX', 'React', 'E-commerce'] },
-  { title: 'SEO', desc: 'Technical, content and authority SEO that earns durable visibility where your buyers search.', tags: ['Technical SEO', 'Content', 'Local'] },
-  { title: 'Google Ads / PPC', desc: 'Performance campaigns built around intent, tracked to revenue, optimised every week.', tags: ['Search', 'Shopping', 'Remarketing'] },
-  { title: 'Social Media Marketing', desc: 'Platform-native content and paid social that builds audience and drives action.', tags: ['Organic', 'Paid Social', 'Community'] },
-  { title: 'Branding & Creative Design', desc: 'Identities and visual systems with the edge to stand out and the discipline to scale.', tags: ['Identity', 'Guidelines', 'Motion'] },
-  { title: 'Content & Creative', desc: 'Copy, photo, video and campaign creative that gives your brand a voice people remember.', tags: ['Copy', 'Video', 'Campaigns'] },
-  { title: 'AI & Automation', desc: 'Workflows, chat and analytics automation that remove busywork and compound your output.', tags: ['Workflows', 'Chatbots', 'Reporting'] },
+  {
+    title: 'Digital Strategy',
+    desc: 'Market, audience and channel strategy that turns ambition into a measurable growth roadmap.',
+    tags: ['Research', 'Positioning', 'Growth Roadmap'],
+  },
+  {
+    title: 'Website & Ecommerce Development',
+    desc: 'Fast, custom-coded websites and online stores built to look exceptional and turn visitors into customers.',
+    tags: ['Custom Coding', 'UI/UX Design', 'Ecommerce', 'WooCommerce', 'Shopify'],
+  },
+  {
+    title: 'SEO',
+    desc: 'Technical, content and authority SEO that earns lasting visibility where your buyers search.',
+    tags: ['Technical SEO', 'Content SEO', 'Local SEO'],
+  },
+  {
+    title: 'Performance Marketing',
+    desc: 'Meta and Google ad campaigns built to generate leads and sales, tracked to revenue and optimised every week.',
+    tags: ['Meta Ads', 'Google Ads', 'Lead Generation' , 'Ecommerce', 'Tik Tok Ads' , 'LinkedIn Ads'],
+  },
+  {
+    title: 'Social Media Marketing',
+    desc: 'Platform-native content and paid social that builds your audience and drives real action.',
+    tags: ['Organic', 'Community', 'Content Creation' , 'Video Contents', 'Paid Social' , 'Influencer Marketing', 'PhotoShoot' , 'Social Media Management' ],
+  },
+  {
+    title: 'Branding, Graphic & UI/UX Design',
+    desc: 'Brand identities, Ad creatives, print and interface designs with the edge to stand out and the consistency to scale.',
+    tags: ['Logo & Identity', 'Creative Design' , 'Graphic Design', 'UI/UX Design'],
+  },
+  {
+    title: 'Video Editing & Motion Design',
+    desc: 'Scroll-stopping edits and motion graphics that turn ideas into high-impact visuals.',
+    tags: ['Video Editing', 'Motion Graphics'],
+  },
+
 ]
 
 export const reasons = [
