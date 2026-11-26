@@ -7,7 +7,7 @@ export default function WhyPrimeLine() {
       <div className="container-x">
         <SectionLabel index="03">Why PrimeLine</SectionLabel>
         <h2 className="display mt-10 text-[clamp(2.4rem,7vw,6.5rem)]">
-          <LineReveal lines={['Why', <span key="p" className="text-brand">Prime Line?</span>]} />
+          <LineReveal lines={['Why', <span key="p" className="text-brand">Primeline?</span>]} />
         </h2>
 
         <div className="mt-16 grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">

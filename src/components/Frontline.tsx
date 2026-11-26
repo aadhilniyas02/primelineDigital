@@ -18,7 +18,7 @@ export default function Frontline() {
   return (
     <section
       ref={ref}
-      aria-label="Built for the digital frontline"
+      aria-label="BUILT FOR RESULTS. NOT JUST REACH."
       className="noise relative isolate overflow-hidden bg-black py-32 sm:py-44"
       onPointerMove={(e) => {
         const r = e.currentTarget.getBoundingClientRect()
@@ -47,9 +47,9 @@ export default function Frontline() {
       <div className="container-x relative">
         <div className="label">Our edge</div>
         <h2 className="display mt-6 text-[clamp(2.2rem,10vw,8rem)]">
-          Built for the <span className="text-brand">digital</span> frontline.
+          Built for <span className="text-brand">results.</span> Not just reach.
         </h2>
-        <p className="mt-8 max-w-lg text-mute-2">Speed, precision and relentless iteration. We ship fast, measure honestly and keep pushing until the numbers move.</p>
+        <p className="mt-8 max-w-lg text-mute-2">Digitally engineered for speed and precision. We launch fast, measure honestly and keep your Business in front of the people who matter, today and tomorrow.</p>
       </div>
 
       <motion.div className="display mt-20 whitespace-nowrap text-[clamp(5rem,18vw,16rem)] text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.18)]" style={{ x: tx }} aria-hidden>

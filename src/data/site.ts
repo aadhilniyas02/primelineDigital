@@ -16,8 +16,8 @@ export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'Work', href: '#work' },
   { label: 'Process', href: '#process' },
+  { label: 'Work', href: '#work' },
   { label: 'Insights', href: '#insights' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -64,12 +64,12 @@ export const services = [
   {
     title: 'Performance Marketing',
     desc: 'Meta and Google ad campaigns built to generate leads and sales, tracked to revenue and optimised every week.',
-    tags: ['Meta Ads', 'Google Ads', 'Lead Generation' , 'Ecommerce', 'Tik Tok Ads' , 'LinkedIn Ads'],
+    tags: ['Meta Ads', 'Google Ads', 'Lead Generation' , 'Ecommerce Ads', 'TikTok Ads' , 'LinkedIn Ads'],
   },
   {
     title: 'Social Media Marketing',
     desc: 'Platform-native content and paid social that builds your audience and drives real action.',
-    tags: ['Organic', 'Community', 'Content Creation' , 'Video Contents', 'Paid Social' , 'Influencer Marketing', 'PhotoShoot' , 'Social Media Management' ],
+    tags: ['Organic', 'Community', 'Content Creation' , 'Video Content', 'Paid Social' , 'Influencer Marketing', 'Photoshoot' , 'Social Media Management' ],
   },
   {
     title: 'Branding, Graphic & UI/UX Design',
@@ -77,28 +77,28 @@ export const services = [
     tags: ['Logo & Identity', 'Creative Design' , 'Graphic Design', 'UI/UX Design'],
   },
   {
-    title: 'Video Editing & Motion Design',
-    desc: 'Scroll-stopping edits and motion graphics that turn ideas into high-impact visuals.',
-    tags: ['Video Editing', 'Motion Graphics'],
+    title: 'Video Production, Editing & Motion Design',
+    desc: 'Professional shoots, editing and motion graphics that make people stop, watch and act.',
+    tags: ['Video Shoots, Photography, Video Editing, Motion Graphics, Reels, AI Videos'],
   },
 
 ]
 
 export const reasons = [
-  { title: 'Strategy First', desc: 'Every pixel and campaign starts with a clear objective.' },
-  { title: 'Design That Converts', desc: 'Beautiful is the baseline. Business results are the brief.' },
-  { title: 'Technology That Performs', desc: 'Lean, fast, modern builds that hold up under pressure.' },
-  { title: 'Data-Driven Growth', desc: 'We measure what matters and act on it, relentlessly.' },
-  { title: 'Built For Scale', desc: 'Systems and foundations that grow when you do.' },
+  { title: 'Strategy First', desc: 'Every plan, idea and campaign starts with a clear goal and a roadmap to reach it, every month, every season.' },
+  { title: 'CREATIVE THAT CONVERTS', desc: 'Graphics, video and motion design that grab attention, attract customers and increase your sales.' },
+  { title: 'Technology That Performs', desc: 'Fast, modern, AI-powered websites and E Commerce stores, custom coded to lift your sales and grow your profit.' },
+  { title: 'ROI-FOCUSED GROWTH', desc: 'We use data to track every result, organic and paid, down to every rupee, so your marketing keeps getting smarter.' },
+  { title: 'ONE TEAM. 360° SOLUTIONS', desc: 'Marketing, Creative, Video Production, Motion Design, Web and E-Commerce under one roof.No need for multiple agencies.' },
   { title: 'Long-Term Partnership', desc: 'We act as an extension of your team, not a vendor.' },
 ]
 
 export const process = [
-  { title: 'Discover', desc: 'Understand the business, audience and goals.' },
-  { title: 'Strategize', desc: 'Build the digital strategy.' },
-  { title: 'Create', desc: 'Design and develop the experience.' },
-  { title: 'Launch', desc: 'Deploy and optimize.' },
-  { title: 'Grow', desc: 'Measure, improve and scale.' },
+  { title: 'Discover', desc: 'We learn your business, your customers and your competitors, then research the market to find where your biggest opportunities are.' },
+  { title: 'Strategize', desc: 'We turn that research into a clear plan covering goals, channels, budget and content, so every step has a purpose.' },
+  { title: 'Create', desc: 'Our team designs, shoots, edits and builds everything: graphics, videos, motion design, websites and ad creatives.' },
+  { title: 'Launch', desc: 'We go live across organic and paid channels, with tracking set up from day one so every result is measured.' },
+  { title: 'Grow', desc: 'We analyse the data, improve what works, cut what doesn\'t and scale your results, month after month.' },
 ]
 
 export type Category = 'Web' | 'Branding' | 'SEO' | 'Marketing' | 'Ecommerce'
